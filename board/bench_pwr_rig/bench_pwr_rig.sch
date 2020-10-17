@@ -1,0 +1,207 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R2 A?
+U 1 1 5F8A4EEA
+P 3400 2400
+F 0 "A?" H 3400 3581 50  0000 C CNN
+F 1 "Arduino_UNO_R2" H 3400 3490 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R2" H 3400 2400 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 3400 2400 50  0001 C CNN
+	1    3400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:NHD-0420H1Z U?
+U 1 1 5F8A716F
+P 1450 2000
+F 0 "U?" H 1450 1111 50  0000 C CNN
+F 1 "NHD-0420H1Z" H 1450 1020 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 1450 1100 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 1550 1900 50  0001 C CNN
+	1    1450 2000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8A78D7
+P 3300 3600
+F 0 "#PWR?" H 3300 3350 50  0001 C CNN
+F 1 "GND" H 3305 3427 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F8A7B39
+P 1450 3050
+F 0 "#PWR?" H 1450 2800 50  0001 C CNN
+F 1 "GND" H 1455 2877 50  0000 C CNN
+F 2 "" H 1450 3050 50  0001 C CNN
+F 3 "" H 1450 3050 50  0001 C CNN
+	1    1450 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3500 3300 3550
+Wire Wire Line
+	3400 3500 3400 3550
+Wire Wire Line
+	3400 3550 3300 3550
+Connection ~ 3300 3550
+Wire Wire Line
+	3300 3550 3300 3600
+Wire Wire Line
+	3500 3500 3500 3550
+Wire Wire Line
+	3500 3550 3400 3550
+Connection ~ 3400 3550
+Wire Wire Line
+	1450 2800 1450 3050
+$Sheet
+S 8500 1700 1100 500 
+U 5F8A85F6
+F0 "buck_boost" 50
+F1 "buck_boost.sch" 50
+$EndSheet
+Wire Wire Line
+	2900 2300 1850 2300
+Wire Wire Line
+	2900 2000 2350 2000
+Wire Wire Line
+	2350 2000 2350 2600
+Wire Wire Line
+	2350 2600 1850 2600
+Wire Wire Line
+	2900 2100 2450 2100
+Wire Wire Line
+	2450 2100 2450 2500
+Wire Wire Line
+	2450 2500 1850 2500
+Wire Wire Line
+	2900 2200 2550 2200
+Wire Wire Line
+	2550 2200 2550 2400
+Wire Wire Line
+	2550 2400 1850 2400
+Wire Wire Line
+	2200 1600 1850 1600
+NoConn ~ 1850 1900
+NoConn ~ 1850 2000
+NoConn ~ 1850 2100
+NoConn ~ 1850 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5F8B305B
+P 1900 1500
+F 0 "#PWR?" H 1900 1250 50  0001 C CNN
+F 1 "GND" V 1905 1372 50  0000 R CNN
+F 2 "" H 1900 1500 50  0001 C CNN
+F 3 "" H 1900 1500 50  0001 C CNN
+	1    1900 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2900 3000 2300 3000
+Wire Wire Line
+	2300 3000 2300 1400
+Wire Wire Line
+	1850 1400 2300 1400
+Wire Wire Line
+	2900 2900 2200 2900
+Wire Wire Line
+	2200 2900 2200 1600
+Wire Wire Line
+	1850 1500 1900 1500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F8B4DB3
+P 3500 1150
+F 0 "#PWR?" H 3500 1000 50  0001 C CNN
+F 1 "+3.3V" H 3515 1323 50  0000 C CNN
+F 2 "" H 3500 1150 50  0001 C CNN
+F 3 "" H 3500 1150 50  0001 C CNN
+	1    3500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8B54C9
+P 3850 1150
+F 0 "#PWR?" H 3850 1000 50  0001 C CNN
+F 1 "+5V" H 3865 1323 50  0000 C CNN
+F 2 "" H 3850 1150 50  0001 C CNN
+F 3 "" H 3850 1150 50  0001 C CNN
+	1    3850 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1400 3600 1250
+Wire Wire Line
+	3600 1250 3850 1250
+Wire Wire Line
+	3850 1250 3850 1150
+Wire Wire Line
+	3500 1400 3500 1150
+$Comp
+L power:GND #PWR?
+U 1 1 5F8B6576
+P 850 2200
+F 0 "#PWR?" H 850 1950 50  0001 C CNN
+F 1 "GND" H 855 2027 50  0000 C CNN
+F 2 "" H 850 2200 50  0001 C CNN
+F 3 "" H 850 2200 50  0001 C CNN
+	1    850  2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2200 1050 2200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5F8B7008
+P 1450 950
+F 0 "#PWR?" H 1450 800 50  0001 C CNN
+F 1 "+3.3V" H 1465 1123 50  0000 C CNN
+F 2 "" H 1450 950 50  0001 C CNN
+F 3 "" H 1450 950 50  0001 C CNN
+	1    1450 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:TIP41A Q?
+U 1 1 5F8B9BDD
+P 5550 2000
+F 0 "Q?" H 5740 2046 50  0000 L CNN
+F 1 "TIP41A" H 5740 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5800 1925 50  0001 L CIN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF" H 5550 2000 50  0001 L CNN
+	1    5550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:TL431LP U?
+U 1 1 5F8BA745
+P 5200 2500
+F 0 "U?" V 5246 2430 50  0000 R CNN
+F 1 "TL431LP" V 5155 2430 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5200 2350 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 5200 2500 50  0001 C CIN
+	1    5200 2500
+	0    1    -1   0   
+$EndComp
+$EndSCHEMATC

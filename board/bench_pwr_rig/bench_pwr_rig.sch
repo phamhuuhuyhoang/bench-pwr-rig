@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:bench_pwr_rig-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -51,8 +52,14 @@ Wire Wire Line
 $Sheet
 S 8500 1700 1100 500 
 U 5F8A85F6
-F0 "buck_boost" 50
-F1 "buck_boost.sch" 50
+F0 "PSFB" 50
+F1 "PSFB.sch" 50
+F2 "VCTL" I R 9600 2000 50 
+F3 "ICTL" I R 9600 2100 50 
+F4 "OUTP" U R 9600 1750 50 
+F5 "OUTN" U R 9600 1850 50 
+F6 "VINP" U L 8500 1750 50 
+F7 "VINN" U L 8500 1850 50 
 $EndSheet
 NoConn ~ 3350 2000
 NoConn ~ 3350 2100
@@ -148,7 +155,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6550 2450 50  0001 C CIN
 	0    1    -1   0   
 $EndComp
 $Comp
-L MCU_Module:PHOTON U?
+L bench_pwr_rig-rescue:PHOTON-MCU_Module U?
 U 1 1 5F8C1D8A
 P 1950 2500
 F 0 "U?" H 1950 1561 50  0000 C CNN
@@ -256,7 +263,7 @@ $EndComp
 Wire Wire Line
 	4150 2000 4150 2100
 $Comp
-L Device:R_POT_TRIM RV?
+L bench_pwr_rig-rescue:R_POT_TRIM-Device RV?
 U 1 1 5F8D3240
 P 4450 3150
 F 0 "RV?" H 4380 3104 50  0000 R CNN

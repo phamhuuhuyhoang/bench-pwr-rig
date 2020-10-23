@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name bench_pwr_rig-rescue)(type Legacy)(uri ${KIPRJMOD}/bench_pwr_rig-rescue.lib)(options "")(descr ""))
+)

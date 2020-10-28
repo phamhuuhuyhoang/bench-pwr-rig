@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+LIBS:bench_pwr_rig-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C?
+U 1 1 5FBA8001
+P 6150 3050
+F 0 "C?" H 6265 3096 50  0000 L CNN
+F 1 "C" H 6265 3005 50  0000 L CNN
+F 2 "" H 6188 2900 50  0001 C CNN
+F 3 "~" H 6150 3050 50  0001 C CNN
+	1    6150 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBA8007
+P 6150 3500
+F 0 "C?" H 6265 3546 50  0000 L CNN
+F 1 "C" H 6265 3455 50  0000 L CNN
+F 2 "" H 6188 3350 50  0001 C CNN
+F 3 "~" H 6150 3500 50  0001 C CNN
+	1    6150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBA800D
+P 4850 3050
+F 0 "C?" H 4965 3096 50  0000 L CNN
+F 1 "C" H 4965 3005 50  0000 L CNN
+F 2 "" H 4888 2900 50  0001 C CNN
+F 3 "~" H 4850 3050 50  0001 C CNN
+	1    4850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBA8013
+P 4850 3500
+F 0 "C?" H 4965 3546 50  0000 L CNN
+F 1 "C" H 4965 3455 50  0000 L CNN
+F 2 "" H 4888 3350 50  0001 C CNN
+F 3 "~" H 4850 3500 50  0001 C CNN
+	1    4850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBA8019
+P 5200 3250
+F 0 "C?" H 5315 3296 50  0000 L CNN
+F 1 "C" H 5315 3205 50  0000 L CNN
+F 2 "" H 5238 3100 50  0001 C CNN
+F 3 "~" H 5200 3250 50  0001 C CNN
+	1    5200 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FBA8021
+P 4000 3250
+F 0 "C?" H 4115 3296 50  0000 L CNN
+F 1 "C" H 4115 3205 50  0000 L CNN
+F 2 "" H 4038 3100 50  0001 C CNN
+F 3 "~" H 4000 3250 50  0001 C CNN
+	1    4000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Filter:7448251201 T?
+U 1 1 5FBA8028
+P 5700 3250
+F 0 "T?" H 5700 3531 50  0000 C CNN
+F 1 "7448251201" H 5700 3440 50  0000 C CNN
+F 2 "" H 5700 3250 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/7448251201.pdf" H 5700 3250 50  0001 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Filter:7448251201 T?
+U 1 1 5FBA802E
+P 4450 3250
+F 0 "T?" H 4450 3531 50  0000 C CNN
+F 1 "7448251201" H 4450 3440 50  0000 C CNN
+F 2 "" H 4450 3250 50  0001 C CNN
+F 3 "https://www.we-online.de/katalog/datasheet/7448251201.pdf" H 4450 3250 50  0001 C CNN
+	1    4450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3150 4700 3150
+Wire Wire Line
+	4650 3350 4700 3350
+Wire Wire Line
+	5900 3350 5950 3350
+Wire Wire Line
+	5900 3150 5950 3150
+Wire Wire Line
+	4850 3200 4850 3300
+Wire Wire Line
+	6150 3200 6150 3250
+$Comp
+L power:Earth #PWR?
+U 1 1 5FBA803A
+P 4950 3300
+F 0 "#PWR?" H 4950 3050 50  0001 C CNN
+F 1 "Earth" H 4950 3150 50  0001 C CNN
+F 2 "" H 4950 3300 50  0001 C CNN
+F 3 "~" H 4950 3300 50  0001 C CNN
+	1    4950 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5FBA8040
+P 6300 3250
+F 0 "#PWR?" H 6300 3000 50  0001 C CNN
+F 1 "Earth" H 6300 3100 50  0001 C CNN
+F 2 "" H 6300 3250 50  0001 C CNN
+F 3 "~" H 6300 3250 50  0001 C CNN
+	1    6300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3300 4850 3300
+Connection ~ 4850 3300
+Wire Wire Line
+	4850 3300 4850 3350
+Wire Wire Line
+	6300 3250 6150 3250
+Connection ~ 6150 3250
+Wire Wire Line
+	6150 3250 6150 3350
+$Comp
+L Protection:B72220S0271K101 RV?
+U 1 1 5FBA804C
+P 6500 3400
+F 0 "RV?" H 6603 3446 50  0000 L CNN
+F 1 "B72220S0271K101" H 6603 3355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P10.00mm" H 6650 3100 50  0001 C CNN
+F 3 "https://www.tdk-electronics.tdk.com/inf/70/db/var/SIOV_Leaded_StandarD.pdf" H 6650 3100 50  0001 C CNN
+	1    6500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2750 6150 2900
+Wire Wire Line
+	6500 3250 6500 2750
+Connection ~ 6500 2750
+Wire Wire Line
+	6500 2750 6150 2750
+Wire Wire Line
+	6500 3550 6500 3900
+Wire Wire Line
+	6500 3900 6150 3900
+Wire Wire Line
+	4000 3400 4000 3900
+Wire Wire Line
+	5950 2750 6150 2750
+Wire Wire Line
+	5950 2750 5950 3150
+Connection ~ 6150 2750
+Wire Wire Line
+	4000 2750 4000 3100
+Wire Wire Line
+	4700 2750 4700 3150
+Wire Wire Line
+	4850 2900 4850 2750
+Wire Wire Line
+	4700 2750 4850 2750
+Connection ~ 4850 2750
+Wire Wire Line
+	4850 2750 5200 2750
+Wire Wire Line
+	5200 2750 5200 3100
+Connection ~ 5200 2750
+Wire Wire Line
+	6150 3650 6150 3900
+Connection ~ 6150 3900
+Wire Wire Line
+	6150 3900 5950 3900
+Wire Wire Line
+	5950 3350 5950 3900
+Wire Wire Line
+	5200 3400 5200 3900
+Connection ~ 5200 3900
+Wire Wire Line
+	4850 3650 4850 3900
+Connection ~ 4850 3900
+Wire Wire Line
+	4850 3900 5200 3900
+Wire Wire Line
+	4700 3350 4700 3900
+Wire Wire Line
+	4700 3900 4850 3900
+Connection ~ 4000 2750
+$Comp
+L Resistor:B57464S100M RT?
+U 1 1 5FBA8071
+P 6800 3900
+F 0 "RT?" V 6510 3900 50  0000 C CNN
+F 1 "B57464S100M" V 6601 3900 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D16.0mm_W5.0mm_P7.50mm" H 7000 3550 50  0001 C CNN
+F 3 "https://www.tdk-electronics.tdk.com/inf/50/db/icl_16/S464.pdf" H 7000 3550 50  0001 C CNN
+	1    6800 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3900 6500 3900
+Connection ~ 6500 3900
+Wire Wire Line
+	6950 3900 7150 3900
+Wire Wire Line
+	5500 3150 5450 3150
+Wire Wire Line
+	5450 3150 5450 2750
+Wire Wire Line
+	5200 2750 5450 2750
+Wire Wire Line
+	5500 3350 5450 3350
+Wire Wire Line
+	5450 3350 5450 3900
+Wire Wire Line
+	5200 3900 5450 3900
+Wire Wire Line
+	4250 3150 4200 3150
+Wire Wire Line
+	4200 3150 4200 2750
+Wire Wire Line
+	4000 2750 4200 2750
+Wire Wire Line
+	4250 3350 4200 3350
+Wire Wire Line
+	4200 3350 4200 3900
+Wire Wire Line
+	4000 3900 4200 3900
+Wire Wire Line
+	3450 2750 4000 2750
+$Comp
+L power:Earth #PWR?
+U 1 1 5FBA8087
+P 3700 3300
+F 0 "#PWR?" H 3700 3050 50  0001 C CNN
+F 1 "Earth" H 3700 3150 50  0001 C CNN
+F 2 "" H 3700 3300 50  0001 C CNN
+F 3 "~" H 3700 3300 50  0001 C CNN
+	1    3700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3300 3700 3300
+Wire Wire Line
+	6500 2750 7150 2750
+Text HLabel 7150 2750 2    50   UnSpc ~ 0
+L_FILT_AC
+Text HLabel 7150 3900 2    50   UnSpc ~ 0
+N_FILT_AC
+Text HLabel 3450 2750 0    50   UnSpc ~ 0
+L_AC
+Text HLabel 3450 3300 0    50   UnSpc ~ 0
+EARTH
+Text HLabel 3450 3900 0    50   UnSpc ~ 0
+N_AC
+Wire Wire Line
+	3450 3900 4000 3900
+Connection ~ 4000 3900
+$EndSCHEMATC

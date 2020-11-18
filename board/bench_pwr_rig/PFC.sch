@@ -265,32 +265,6 @@ F 4 "10K" H 7170 2305 50  0000 L CNN "Resistance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Capacitor:C1608X7R1E105K080AB C58
-U 1 1 605CB970
-P 7450 5350
-F 0 "C58" H 7565 5441 50  0000 L CNN
-F 1 "C1608X7R1E105K080AB" H 8000 5150 50  0001 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7450 5350 50  0001 C CNN
-F 3 "https://content.kemet.com/datasheets/KEM_C1064_X1_400_VAC_Y2_250_VAC.pdf" H 7450 5350 50  0001 C CNN
-F 4 "1uF" H 7565 5350 50  0000 L CNN "Capacitance"
-F 5 "25V" H 7565 5259 50  0000 L CNN "Voltage"
-	1    7450 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Capacitor:C1608X7R1H104K C57
-U 1 1 605D6D7F
-P 7000 5250
-F 0 "C57" H 7115 5341 50  0000 L CNN
-F 1 "C1608X7R1H104K" H 7550 5050 50  0001 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7000 5250 50  0001 C CNN
-F 3 "https://content.kemet.com/datasheets/KEM_C1064_X1_400_VAC_Y2_250_VAC.pdf" H 7000 5250 50  0001 C CNN
-F 4 "0.1uF" H 7115 5250 50  0000 L CNN "Capacitance"
-F 5 "50V" H 7115 5159 50  0000 L CNN "Voltage"
-	1    7000 5250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Capacitor:C1608X7R1E105K080AB C54
 U 1 1 605D9C00
 P 5650 2350
@@ -661,4 +635,44 @@ Wire Wire Line
 	5000 5900 5550 5900
 Text Label 5150 5900 0    50   ~ 0
 RTNP
+Text Label 7100 1700 0    50   ~ 0
+BST-SW-NODE
+Text Label 4550 4650 0    50   ~ 0
+U20-ICOMP
+Text Label 4300 4450 0    50   ~ 0
+U20-ISNS
+Text Label 6050 4200 1    50   ~ 0
+U20-OUT
+Text Label 6350 4550 0    50   ~ 0
+BST-VSNS
+Text Label 6200 4750 0    50   ~ 0
+BST-VCMP
+Text Label 5000 5150 1    50   ~ 0
+BST-FREQ
+$Comp
+L Capacitor:CC0805KRX7R9BB104 C57
+U 1 1 5FB4849D
+P 7000 5250
+F 0 "C57" H 7115 5341 50  0000 L CNN
+F 1 "CC0805KRX7R9BB104" H 7550 5050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7000 5250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B103KCANNNC_C18741.pdf" H 7000 5250 50  0001 C CNN
+F 4 "0.1uF" H 7115 5250 50  0000 L CNN "Capacitance"
+F 5 "50V" H 7115 5159 50  0000 L CNN "Voltage"
+	1    7000 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Capacitor:CL21B105KBFNNNE C58
+U 1 1 5FB48B3E
+P 7450 5350
+F 0 "C58" H 7565 5441 50  0000 L CNN
+F 1 "CL21B105KBFNNNE" H 8000 5150 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7450 5350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21B103KCANNNC_C18741.pdf" H 7450 5350 50  0001 C CNN
+F 4 "1uF" H 7565 5350 50  0000 L CNN "Capacitance"
+F 5 "50V" H 7565 5259 50  0000 L CNN "Voltage"
+	1    7450 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

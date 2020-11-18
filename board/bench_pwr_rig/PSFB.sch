@@ -607,17 +607,6 @@ Wire Wire Line
 Wire Wire Line
 	17700 11100 17700 11150
 $Comp
-L Inductor:AGP2923-333 U17
-U 1 1 5FB02C12
-P 17300 9450
-F 0 "U17" H 17388 9496 50  0000 L CNN
-F 1 "AGP2923-333" H 17388 9405 50  0000 L CNN
-F 2 "Inductor_THT:L_Coilcraft_AGP2923" H 17350 9250 50  0001 C CNN
-F 3 "https://www.coilcraft.com/getmedia/6fe93cdb-fea1-4ec7-9fa6-c6c063686989/agp2923.pdf" H 17350 9250 50  0001 C CNN
-	1    17300 9450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Inductor:SER1512-103 L1
 U 1 1 5FB5FBBB
 P 4700 11550
@@ -1118,25 +1107,10 @@ Text HLabel 21950 9450 2    50   UnSpc ~ 0
 OUTP
 Text HLabel 21950 10400 2    50   UnSpc ~ 0
 OUTN
-$Comp
-L Device:C C19
-U 1 1 6173280E
-P 5500 1000
-F 0 "C19" V 5248 1000 50  0000 C CNN
-F 1 "DNP" V 5339 1000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5538 850 50  0001 C CNN
-F 3 "~" H 5500 1000 50  0001 C CNN
-	1    5500 1000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	5350 1000 5200 1000
+	5100 1000 4950 1000
 Wire Wire Line
-	5200 1000 5200 1100
-Wire Wire Line
-	5650 1000 5800 1000
-Wire Wire Line
-	5800 1000 5800 1100
+	4950 1000 4950 1100
 $Comp
 L Device:R R82
 U 1 1 6179F52A
@@ -1188,17 +1162,6 @@ Wire Wire Line
 Connection ~ 16850 15300
 Wire Wire Line
 	16850 15300 16850 15450
-$Comp
-L power:RTNS #PWR036
-U 1 1 61B18E6F
-P 5800 1100
-F 0 "#PWR036" H 5800 850 50  0001 C CNN
-F 1 "RTNS" H 5805 927 50  0000 C CNN
-F 2 "" H 5800 1100 50  0001 C CNN
-F 3 "" H 5800 1100 50  0001 C CNN
-	1    5800 1100
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:RTNS #PWR047
 U 1 1 61B19F7D
@@ -3283,22 +3246,8 @@ F 3 "" H 14700 7250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14200 6750 14200 7500
-$Comp
-L Resistor:CRCW060310K0FKEA R75
-U 1 1 6150AC7C
-P 15050 7100
-F 0 "R75" H 15120 7146 50  0000 L CNN
-F 1 "CRCW060310K0FKEA" H 15550 6850 50  0001 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15050 7100 50  0001 C CNN
-F 3 "https://www.vishay.com/docs/20035/dcrcwe3.pdf" H 15050 7100 50  0001 C CNN
-F 4 "10K" H 15120 7055 50  0000 L CNN "Resistance"
-	1    15050 7100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	14700 7150 14700 7250
-Wire Wire Line
-	15050 7250 14700 7250
 Connection ~ 14700 7250
 Wire Wire Line
 	15000 6950 15050 6950
@@ -3318,20 +3267,6 @@ F 4 "10K" H 15120 6555 50  0000 L CNN "Resistance"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR054
-U 1 1 6166AE96
-P 15050 6400
-F 0 "#PWR054" H 15050 6250 50  0001 C CNN
-F 1 "+5V" H 15065 6573 50  0000 C CNN
-F 2 "" H 15050 6400 50  0001 C CNN
-F 3 "" H 15050 6400 50  0001 C CNN
-	1    15050 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15050 6400 15050 6450
-Connection ~ 15050 6950
-$Comp
 L Transistor_FET:BSS138 Q14
 U 1 1 617719F5
 P 15800 6950
@@ -3342,9 +3277,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 15800 6950 50  0001 L
 	1    15800 6950
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	15700 7250 15050 7250
-Connection ~ 15050 7250
 Wire Wire Line
 	15050 6750 15050 6950
 Wire Wire Line
@@ -4027,6 +3959,80 @@ Text Label 4500 4200 0    50   ~ 0
 RTNP
 Text Label 2600 2050 0    50   ~ 0
 RTNP
-Text Label 5200 1100 0    50   ~ 0
+Text Label 4950 1100 0    50   ~ 0
 RTNP
+Wire Wire Line
+	15050 6200 15050 6450
+Text Label 15050 6350 1    50   ~ 0
+VREF
+$Comp
+L Resistor:0603WAF4752T5E R75
+U 1 1 5FC9AF0F
+P 15050 7100
+F 0 "R75" H 15120 7146 50  0000 L CNN
+F 1 "0603WAF4752T5E" H 15550 6850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 15050 7100 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF1001T5E_C21190.pdf" H 15050 7100 50  0001 C CNN
+F 4 "47.5K" H 15120 7055 50  0000 L CNN "Resistance"
+	1    15050 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14700 7250 15050 7250
+Connection ~ 15050 6950
+Connection ~ 15050 7250
+Wire Wire Line
+	15050 7250 15700 7250
+Text Label 15400 9450 0    50   ~ 0
+SW_LOUT
+$Comp
+L Inductor:AGP2923-333 L3
+U 1 1 5FBC4317
+P 17300 9450
+F 0 "L3" V 17525 9450 50  0000 C CNN
+F 1 "AGP2923-333" V 17434 9450 50  0000 C CNN
+F 2 "Inductor_THT:L_Coilcraft_AGP2923" H 17350 9250 50  0001 C CNN
+F 3 "https://www.coilcraft.com/getmedia/6fe93cdb-fea1-4ec7-9fa6-c6c063686989/agp2923.pdf" H 17350 9250 50  0001 C CNN
+	1    17300 9450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:RTNS #PWR036
+U 1 1 61B18E6F
+P 6050 1100
+F 0 "#PWR036" H 6050 850 50  0001 C CNN
+F 1 "RTNS" H 6055 927 50  0000 C CNN
+F 2 "" H 6050 1100 50  0001 C CNN
+F 3 "" H 6050 1100 50  0001 C CNN
+	1    6050 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1000 6050 1100
+Wire Wire Line
+	5900 1000 6050 1000
+$Comp
+L Device:C C59
+U 1 1 601D867B
+P 5750 1000
+F 0 "C59" V 5498 1000 50  0000 C CNN
+F 1 "C" V 5589 1000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D9.0mm_W5.0mm_P10.00mm" H 5788 850 50  0001 C CNN
+F 3 "~" H 5750 1000 50  0001 C CNN
+	1    5750 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C19
+U 1 1 601D8067
+P 5250 1000
+F 0 "C19" V 4998 1000 50  0000 C CNN
+F 1 "C" V 5089 1000 50  0000 C CNN
+F 2 "Capacitor_THT:C_Disc_D9.0mm_W5.0mm_P10.00mm" H 5288 850 50  0001 C CNN
+F 3 "~" H 5250 1000 50  0001 C CNN
+	1    5250 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 1000 5600 1000
 $EndSCHEMATC

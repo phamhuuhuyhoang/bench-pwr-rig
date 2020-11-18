@@ -276,4 +276,10 @@ Wire Wire Line
 	3350 3900 3800 3900
 Connection ~ 3350 3900
 Connection ~ 3800 3900
+Text Label 3400 3900 0    50   ~ 0
+N_AC_FUSE
+Text Label 5000 2750 0    50   ~ 0
+L_AC_MID
+Text Label 4800 3900 0    50   ~ 0
+N_AC_MID
 $EndSCHEMATC
